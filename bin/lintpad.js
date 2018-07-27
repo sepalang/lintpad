@@ -1,18 +1,18 @@
 #!/usr/bin/env node
-
 const argv = require('@sepalang/myself').args
 const runpad = require('../lib/runpad')
 const path = require('path')
 const cwd  = process.cwd()
 
 const lintpadOptions = {
-  fix        : !!argv.fix,
+  fix        : !!argv["fix"],
   cwd        : cwd,
   files      : undefined,
   parser     : "babel",
   useEslintrc: false,
   silent     : false,
-  mode       : argv["m"] || argv["mode"] || "app"
+  mode       : argv["m"] || argv["mode"] || "app",
+  ignore     : typeof argv["ignore"] === "boolean" ? argv["ignore"] : true
 }
 
 if(argv._ && argv._ instanceof Array && argv._.length){
