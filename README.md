@@ -19,3 +19,10 @@ lintpad src/path
 // lint auto fix
 lintpad src/path --fix
 ```
+
+### mode
+```
+// remove semicolone mode
+lintpad src/path --mode lib
+lintpad src/path -m lib
+```
