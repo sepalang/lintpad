@@ -1,8 +1,5 @@
 # Lintpad
-Always run lint quickly
-
-# state
-It does not work properly yet.
+run lint quickly
 
 ## install
 ```js
@@ -14,7 +11,11 @@ npm i -g lintpad
 ```
 
 ## run
-### default
+### basic
 ```
-lintpad src
+// lint
+lintpad src/path
+
+// lint auto fix
+lintpad src/path --fix
 ```
