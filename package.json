@@ -1,0 +1,42 @@
+{
+  "name": "@sepalang/lintpad",
+  "version": "0.0.1",
+  "description": "Always run lint quickly",
+  "main": "index.js",
+  "bin": {
+    "lintpad": "bin/lintpad.js"
+  },
+  "scripts": {
+    "basic": "my lintpad tests/basic/src",
+    "basic:fix": "shx rm -rf tests/basic/fix && shx cp -r tests/basic/src tests/basic/fix && my lintpad tests/basic/fix --fix",
+    "vue": "my lintpad tests/vue/src",
+    "vue:fix": "shx rm -rf tests/vue/fix && shx cp -r tests/vue/src tests/vue/fix && my lintpad tests/vue/fix --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sepalang/lintpad.git"
+  },
+  "keywords": [
+    "eslint"
+  ],
+  "author": "AHN HO JUNG",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sepalang/lintpad/issues"
+  },
+  "homepage": "https://github.com/sepalang/lintpad#readme",
+  "dependencies": {
+    "@sepalang/myself": "^0.2.3",
+    "@vue/eslint-config-standard": "^3.0.0-rc.8",
+    "babel-eslint": "^8.2.6",
+    "eslint": "^5.2.0",
+    "eslint-plugin-vue": "^5.0.0-beta.1"
+  },
+  "devDependencies": {
+    "shx": "^0.3.2"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  }
+}
