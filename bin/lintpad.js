@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const argv = require('@sepalang/myself').args
 const runpad = require('../lib/runpad')
 const path = require('path')
