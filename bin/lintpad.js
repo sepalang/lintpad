@@ -11,7 +11,7 @@ const lintpadOptions = {
   parser     : "babel",
   useEslintrc: false,
   silent     : false,
-  mode       : argv["m"] || argv["mode"] || "app",
+  mode       : argv["m"] || argv["mode"] || argv._[1] || "app",
   ignore     : typeof argv["ignore"] === "boolean" ? argv["ignore"] : true
 }
 
