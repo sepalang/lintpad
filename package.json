@@ -1,16 +1,16 @@
 {
   "name": "@sepalang/lintpad",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Always run lint quickly",
   "main": "index.js",
   "bin": {
     "lintpad": "bin/lintpad.js"
   },
   "scripts": {
-    "bin": "my lintpad bin -m lib",
-    "bin:fix": "my lintpad bin lib --fix",
+    "bin": "my lintpad bin app",
+    "bin:fix": "my lintpad bin stage --fix",
     "lib": "my lintpad lib -m lib",
-    "lib:fix": "my lintpad lib -m lib --fix",
+    "lib:fix": "my lintpad lib -m stage --fix",
     "basic": "my lintpad tests/basic/src",
     "basic:fix": "shx rm -rf tests/basic/fix && shx cp -r tests/basic/src tests/basic/fix && my lintpad tests/basic/fix --fix",
     "vue": "my lintpad tests/vue/src",
