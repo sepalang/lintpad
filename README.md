@@ -26,3 +26,10 @@ lintpad src/path --fix
 lintpad src/path --mode lib
 lintpad src/path -m lib
 ```
+
+### filter
+```
+
+lintpad src/path --filter lib
+lintpad src/path -f lib
+```

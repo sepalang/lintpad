@@ -12,6 +12,7 @@ const lintpadOptions = {
   useEslintrc: false,
   silent     : false,
   mode       : argv["m"] || argv["mode"] || argv._[1] || "app",
+  filter     : argv["f"] || argv["filter"] || undefined,
   ignore     : typeof argv["ignore"] === "boolean" ? argv["ignore"] : true
 }
 
