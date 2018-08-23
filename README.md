@@ -1,4 +1,7 @@
 # Lintpad
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/sepalang/lintpad.svg)](https://greenkeeper.io/)
+
 run lint quickly
 
 ## install
