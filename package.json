@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/sepalang/lintpad#readme",
   "dependencies": {
-    "@sepalang/myself": "^0.2.3",
+    "@sepalang/myself": "^0.3.0",
     "@vue/eslint-config-standard": "^3.0.0-rc.8",
     "babel-eslint": "^8.2.6",
     "eslint": "^5.2.0",
