@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/sepalang/lintpad/tree/master.svg?style=shield)](https://circleci.com/gh/sepalang/lintpad/tree/master)
+
 # Lintpad
 run lint quickly
 
