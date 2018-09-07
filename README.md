@@ -1,3 +1,4 @@
+[![CircleCI](https://circleci.com/gh/sepalang/lintpad/tree/master.svg?style=shield)](https://circleci.com/gh/sepalang/lintpad/tree/master)
 [![Greenkeeper badge](https://badges.greenkeeper.io/sepalang/lintpad.svg)](https://greenkeeper.io/)
 
 # Lintpad
