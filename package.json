@@ -1,6 +1,6 @@
 {
   "name": "@sepalang/lintpad",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Always run lint quickly",
   "main": "index.js",
   "bin": {
