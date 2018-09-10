@@ -1,6 +1,6 @@
 {
   "name": "@sepalang/lintpad",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Always run lint quickly",
   "main": "index.js",
   "bin": {
@@ -31,10 +31,14 @@
   "homepage": "https://github.com/sepalang/lintpad#readme",
   "dependencies": {
     "@sepalang/myself": "^0.3.0",
-    "@vue/eslint-config-standard": "^3.0.0-rc.8",
+    "@vue/eslint-config-standard": "^3.0.1",
     "babel-eslint": "^8.2.6",
-    "eslint": "^5.2.0",
-    "eslint-plugin-vue": "^5.0.0-beta.1"
+    "eslint": "^5.5.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^5.0.0-beta.3"
   },
   "devDependencies": {
     "shx": "^0.3.2"
