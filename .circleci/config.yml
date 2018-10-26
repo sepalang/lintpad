@@ -36,6 +36,15 @@ jobs:
           name: TEST
           command: npm run vue:fix
 
+  test-multi-fix:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: TEST
+          command: npm run vue:fix
+
 workflows:
   version: 2
   task:
@@ -45,5 +54,8 @@ workflows:
           requires:
             - initialize
       - test-vue-fix:
+          requires:
+            - initialize
+      - test-multi-fix:
           requires:
             - initialize

@@ -1,6 +1,6 @@
 {
   "name": "@sepalang/lintpad",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Always run lint quickly",
   "main": "index.js",
   "bin": {
@@ -14,7 +14,9 @@
     "basic": "my lintpad tests/basic/src",
     "basic:fix": "shx rm -rf tests/basic/fix && shx cp -r tests/basic/src tests/basic/fix && my lintpad tests/basic/fix --fix",
     "vue": "my lintpad tests/vue/src",
-    "vue:fix": "shx rm -rf tests/vue/fix && shx cp -r tests/vue/src tests/vue/fix && my lintpad tests/vue/fix --fix"
+    "vue:fix": "shx rm -rf tests/vue/fix && shx cp -r tests/vue/src tests/vue/fix && my lintpad tests/vue/fix --fix",
+    "multi": "my lintpad 'tests/multi/src/one, tests/multi/src/two'",
+    "multi:fix": "shx rm -rf tests/multi/fix && shx cp -r tests/multi/src tests/multi/fix && my lintpad 'tests/multi/src/one tests/multi/src/two' --fix"
   },
   "repository": {
     "type": "git",
@@ -31,10 +33,10 @@
   "homepage": "https://github.com/sepalang/lintpad#readme",
   "dependencies": {
     "@sepalang/myself": "^0.3.0",
-    "@vue/eslint-config-standard": "^3.0.1",
+    "@vue/eslint-config-standard": "^3.0.5",
     "ajv-keywords": "^3.2.0",
-    "babel-eslint": "^10.0.0",
-    "eslint": "^5.5.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.7.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-node": "^7.0.1",
     "eslint-plugin-promise": "^4.0.1",

@@ -17,7 +17,7 @@ const lintpadOptions = {
 }
 
 if(argv._ && argv._ instanceof Array && argv._.length){
-  lintpadOptions.files = argv._[0].trim().split(/\s/)
+  lintpadOptions.files = argv._[0].trim().split(/[\,\s]+/)
 }
 
 lintpadOptions.files = lintpadOptions.files.map(input=>{

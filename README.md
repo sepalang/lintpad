@@ -24,10 +24,17 @@ lintpad src/path --fix
 ```
 
 ### mode
+- semi : app, web
+- no-semi : node, lib
 ```
-// remove semicolone mode
 lintpad src/path --mode lib
 lintpad src/path -m lib
+```
+
+### multi path
+```
+lintpad 'src/path/one src/path/two'
+lintpad 'src/path/one, src/path/two'
 ```
 
 ### filter
