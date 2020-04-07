@@ -1,6 +1,6 @@
 {
   "name": "@sepalang/lintpad",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "Always run lint quickly",
   "main": "index.js",
   "bin": {
@@ -15,7 +15,7 @@
     "basic:fix": "shx rm -rf tests/basic/fix && shx cp -r tests/basic/src tests/basic/fix && my lintpad tests/basic/fix --fix",
     "vue": "my lintpad tests/vue/src",
     "vue:fix": "shx rm -rf tests/vue/fix && shx cp -r tests/vue/src tests/vue/fix && my lintpad tests/vue/fix --fix",
-    "multi": "my lintpad 'tests/multi/src/one, tests/multi/src/two'",
+    "multi": "my lintpad 'tests/multi/src/one,tests/multi/src/two'",
     "multi:fix": "shx rm -rf tests/multi/fix && shx cp -r tests/multi/src tests/multi/fix && my lintpad 'tests/multi/src/one tests/multi/src/two' --fix"
   },
   "repository": {
@@ -34,7 +34,6 @@
   "dependencies": {
     "@sepalang/myself": "^0.3.0",
     "@vue/eslint-config-standard": "^5.1.2",
-    "ajv-keywords": "^3.2.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^6.8.0",
     "eslint-config-standard": "^14.1.1",
@@ -45,7 +44,8 @@
     "eslint-plugin-vue": "^6.2.2"
   },
   "devDependencies": {
-    "shx": "^0.3.2"
+    "shx": "^0.3.2",
+    "webpack": "^4.42.1"
   },
   "directories": {
     "lib": "lib",

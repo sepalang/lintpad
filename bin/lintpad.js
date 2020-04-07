@@ -17,7 +17,8 @@ const lintpadOptions = {
 }
 
 if(argv._ && argv._ instanceof Array && argv._.length){
-  lintpadOptions.files = argv._[0].trim().split(/[\,\s]+/)
+  const trimValue = regexpReduce(argv._[0], [/^\s+(.*)/, /(.*)\s+$/, /^\'+(.*)/, /(.*)\'+$/, /^\"+(.*)/, /(.*)\"+$/])
+  lintpadOptions.files = trimValue.split(/[\,\s]+/)
 }
 
 lintpadOptions.files = lintpadOptions.files.map(input=>{
@@ -25,3 +26,18 @@ lintpadOptions.files = lintpadOptions.files.map(input=>{
 })
 
 runpad(lintpadOptions)
+
+function regexpReduce (string, patterns, selector){
+  let result = string
+  if(typeof selector !== "function"){
+    selector = function (matches){
+      return matches[1] || matches[0]
+    }
+  }
+  patterns.forEach((regexp)=>{
+    const matches = regexp.exec(result)
+    if(!matches) return
+    result = selector(matches) || result
+  })
+  return result
+}

@@ -1,5 +1,7 @@
 <template>
-  <div v-for="num in b">asdf</div>
+  <div>
+    <div v-for="(num, index) in b" :key="index">asdf</div>
+  </div>
 </template>
 <script>
 export default {
